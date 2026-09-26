@@ -1,0 +1,2 @@
+import app from './server-entry.js';
+export default { async fetch(request, env, ctx) { const path = new URL(request.url).pathname; if (path.startsWith('/_next/') || path.startsWith('/assets/') || path === '/favicon.ico') return env.ASSETS.fetch(request); return app.fetch(request, env, ctx); } };

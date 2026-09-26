@@ -1,0 +1,1 @@
+import{writeFile}from'node:fs/promises';const url=process.argv[2];const r=await fetch(url);if(!r.ok)throw Error('Local render failed '+r.status);let html=await r.text();if(!html.includes('SourceDossier'))throw Error('Wrong local render');await writeFile(new URL('../dist/client/index.html',import.meta.url),html);console.log('Static entry written');
