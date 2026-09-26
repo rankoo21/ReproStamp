@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'SourceDossier — Attributed Consensus',
-  description: 'Validator-fetched evidence dossiers on GenLayer Studionet.',
+  title: 'ReproStamp — Reproducibility Consensus',
+  description: 'Validator-fetched research artifacts with byte-level receipts.',
 };
 
 export default function RootLayout({
